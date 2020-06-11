@@ -29,5 +29,9 @@ Route::middleware('auth')->group(function () {
     Route::post('me', 'UserController@update')->name('users.update');
 });
 
-Route::get('/inputs', 'InputController@index');
-Route::post('/inputs', 'InputController@store');
+//Route::get('/inputs', 'InputController@index');
+//Route::post('/inputs', 'InputController@store');
+
+Route::get("/inputBlade", function() {
+    return view("layouts/input");
+});
