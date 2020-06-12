@@ -35,3 +35,7 @@ Route::middleware('auth')->group(function () {
 Route::get("/inputBlade", function() {
     return view("layouts/input");
 });
+
+Route::get("/outputBlade", function() {
+    return view("layouts/output");
+});

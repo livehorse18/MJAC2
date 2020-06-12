@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 class InputController extends Controller
 {
-    public function index()
+    public function input()
     {
-        return view('inputs/index');
+        return view('layouts.inout');
     }
 }
